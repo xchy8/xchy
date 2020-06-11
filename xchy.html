@@ -84,15 +84,15 @@
                 let child = document.getElementById("btn1");
                 child.style = 'display:none;';
             } else if (u.indexOf("Android") > -1 || u.indexOf("Linux") > -1) { // 判断安卓
-                alert("jin")
-                    // let icon = document.getElementsByClassName("icon-ios")[0];
-                    // icon.className = "icon-android"
-                    // let child = document.getElementsByClassName("masklayer")[0];
-                    // child.parentNode.removeChild(child);
-                    // let btn1 = document.getElementById("btn1");
-                    // btn1.style = 'display:none;';
-                    // let btn2 = document.getElementById("btn2");
-                    // btn2.style.display = '';
+                //alert("jin")
+                let icon = document.getElementsByClassName("icon-ios")[0];
+                icon.className = "icon-android"
+                let child = document.getElementsByClassName("masklayer")[0];
+                child.parentNode.removeChild(child);
+                let btn1 = document.getElementById("btn1");
+                btn1.style = 'display:none;';
+                let btn2 = document.getElementById("btn2");
+                btn2.style.display = '';
                 window.location.href = "https://zhan168.oss-cn-shenzhen.aliyuncs.com/xchy.apk";
             } else if (!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) { //ios终端// 判断iOS
                 let child = document.getElementsByClassName("masklayer")[0];
