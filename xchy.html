@@ -78,7 +78,7 @@
         function initdata() {
             var u = navigator.userAgent;
             var ua = navigator.userAgent.toLowerCase();
-			alert(u + '---------' + ua)
+            alert(u + '---------' + ua + '-----------' + u.indexOf("Android") + '-----------' + u.indexOf("Linux"))
             if (ua.match(/MicroMessenger/i) == "micromessenger") { // 判断是否在微信内置浏览器打开
                 //alert('当前页面在微信中打开')
                 let child = document.getElementById("btn1");
